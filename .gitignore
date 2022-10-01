@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/src/services/keys
+
 # production
 /build
 

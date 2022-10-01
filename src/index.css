@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(182, 183, 184, 0.938);
+    overflow-x: hidden;
+}
+button, input{
+    outline: none;
+}
+button, input:focus{
+    outline: none;
+}
+.title{
+    font: 700 normal 24px/36px 'Poppins', sans-serif;
+}
+.title span{
+    font-weight: 300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@media (max-width: 768px) { 
+    .App, #Home, .section-for-elements{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;  
+          width: 100%;
+   }
+ }
