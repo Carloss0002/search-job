@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Search Jobs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![jobs_search](https://user-images.githubusercontent.com/93801199/193842675-03005c6e-c875-49a5-b387-4a96c5e58c0c.jpg)
 
-## Available Scripts
+## Sobre
 
-In the project directory, you can run:
+<p>
+  App criado com base na adzuna api, onde o usuário poderá procurar por informações sobre determinado trabalho.
+</p>
+<p>
+  Na aplicação temos a busca de determinado trabalho por titulo, podendo também pesquisar por determinado estado e país, mas pela limitação de requisição preferir não acrescentar mudança de page.
+</p>
+<p>
+  E graças a limitação da api preferir usar o useCallback para ajudar no desempenho da página, a requisição inicial e com useEffect, mas para não desperdiçar requisições o useCallback foi escolhido, ele retorna uma função em 'cache' bem parecido com useMemo, e no caso do App só é executado quando uma função anônima é chamada, e quando o mesmo valor é chamado o user tem uma reposta mais rápida, daí o motivo por ser escolhido.
+</p>
 
-### `npm start`
+## Tecnologias :construction:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React.js
+- typescript
+- bootstrap
+- react-icons
+- axios
+- react-router-dom
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## O que falta :warning:
 
-### `npm test`
+Acrescentar filter para renderizar trabalhos full time, o jeito que deu certo não me agradou muito, no caso foi renderizar tudo de novo filtrando elementos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para contribuir
 
-### `npm run build`
+Você precisa
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- node.js
+- git
+- keys da api adzuna
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - faça um clone deste repositório em seu computador
+  - dê um npm install para intalar dependências
+  - crie um arquivo dentro de services chamado keys
+  - crie um index.ts dentro da pasta
+  - dentro da index crie, duas constantes uma chamada id e outra chamada api_key, não se preocupe se tudo der certo, a index já está sendo importada para a jobsApi.ts.
+  - depois dê um npm start
+  
+## Links :link:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[adzuna](https://developer.adzuna.com/overview)
+[bootstrap](https://getbootstrap.com/)  
